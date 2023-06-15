@@ -1,0 +1,17 @@
+<add-folder (clickEmitter)="onAddFolder()"></add-folder>
+<ng-container>
+  <div *ngIf="showCreateDialog">
+    <form (ngSubmit)="onSubmit()">
+    <input name="folder-Name" [(ngModel)]="folderName"/>
+    <button type="submit">Submit</button>
+  </form>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="currentFolderData">
+  <div *ngFor="let folder of currentFolderData['subFolders']; let i = index">
+     <button (click)="navigateToSubfolder(folder)"> {{folder.folderName}}  </button>
+  </div>
+</ng-container>
+
+
