@@ -1,3 +1,14 @@
+Branches for repository : 
+feature/with-route-app - a basic skeleton of app where a new route is created on creating a new folder
+feature/without-routes-app - a basic skeleton of app where same component is being re-rendered when clicking to a new folder
+
+
+
+
+
+
+
+
 # AngularFileManager
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
